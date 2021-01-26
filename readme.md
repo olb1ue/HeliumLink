@@ -1,5 +1,5 @@
 # Freeing Space on a Helium DIY Miner
-This guide is for freeing up space on a [Helium DIY Miner](https://developer.helium.com/blockchain/run-your-own-miner). It assumes you've followed the steps in the linked tutorial from Helium. This process removes blockchain db files and updates your miners config the latest blessed snapshot which will be within the most recent `720` blocks. It should resync within 15 minutes.
+This guide is for freeing up space on a [Helium DIY Miner](https://developer.helium.com/blockchain/run-your-own-miner). It assumes you've followed the steps in the linked tutorial from Helium. This process removes blockchain db files and updates your miner's config to the latest blessed snapshot which will be within the most recent `720` blocks. It should resync within 15 minutes.
 
 ## Stop The Miner
 
@@ -8,7 +8,7 @@ docker stop miner
 ```
 
 ## Remove .db directories
-**WARNING: Be sure to backup your `swarm_key` file before tampering with any files or directories in your `miner_data` directory**
+**WARNING: Be sure to [backup your](https://developer.helium.com/blockchain/run-your-own-miner#backing-up-your-swarm-keys) `swarm_key` file before tampering with any files or directories in your `miner_data` directory**
 
 ```console
 sudo rm -rf miner_data/blockchain.db
