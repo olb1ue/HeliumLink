@@ -1,5 +1,3 @@
-
-
 API_URL="http://tools.heliumlink.io/blessed/latest/"
 DOCKER_CONFIG_URL="https://raw.githubusercontent.com/helium/miner/master/config/docker.config"
 
