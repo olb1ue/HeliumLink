@@ -22,7 +22,9 @@ It assumes the miner is running on the default ports for p2p (44158) and the gat
 
 ```console
 wget https://raw.githubusercontent.com/olb1ue/HeliumLink/master/create-blessed-config.sh
+
 sudo chmod +x create-blessed-config.sh
+
 ./create-blessed-config.sh
 ```
 
