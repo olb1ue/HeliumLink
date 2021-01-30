@@ -21,7 +21,7 @@ sudo rm -rf miner_data/ledger.db
 It assumes the miner is running on the default ports for p2p (44158) and the gateway (1680). `docker.config` should be edited to reflect the correct ports if your miner isn't running on the default ports.
 
 ```console
-wget https://raw.githubusercontent.com/olb1ue/HeliumLink/master/create-blessed-config.sh
+wget https://raw.githubusercontent.com/olb1ue/HeliumLink/master/diy-freespace/create-blessed-config.sh
 
 sudo chmod +x create-blessed-config.sh
 
