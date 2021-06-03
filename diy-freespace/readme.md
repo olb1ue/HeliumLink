@@ -13,6 +13,7 @@ docker stop miner
 ```console
 sudo rm -rf miner_data/blockchain.db
 sudo rm -rf miner_data/ledger.db
+sudo rm -rf miner_data/checkpoints
 ```
 
 ## Create New Config
@@ -37,7 +38,7 @@ docker cp docker.config miner:/opt/miner/releases/0.1.0/sys.config
 ## Restart Miner 
 
 
-Restart the miner and it will start looking for peers to download the most recent blessed snapshot from. Once that's done, the miner should start syncing and finish the process within 15 minutes and with a lot more space freed up :)
+Restart the miner and it will start looking for peers to download the most recent blessed snapshot from. Once that's done, the miner should start syncing and finish the process within 15-30 minutes and with a lot more space freed up :)
 ```console
 docker start miner
 ```
