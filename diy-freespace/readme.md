@@ -32,7 +32,9 @@ sudo chmod +x create-blessed-config.sh
 ## Copy New Config To Container
 
 ```console
-docker cp docker.config miner:/opt/miner/releases/0.1.0/sys.config
+version=$(docker exec miner ls /opt/miner/releases/ | grep 2)
+
+docker cp docker.config miner:/opt/miner/releases/$version/sys.config
 ```
 
 ## Restart Miner 
