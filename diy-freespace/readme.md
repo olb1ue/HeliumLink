@@ -8,7 +8,7 @@ docker stop miner
 ```
 
 ## Remove .db directories
-**WARNING: Be sure to [backup your](https://docs.helium.com/mine-hnt/build-a-packet-forwarder#backing-up-your-swarm-keys) `swarm_key` file before tampering with any files or directories in your `miner_data` directory**
+**WARNING: Be sure to [backup your](https://docs.helium.com/mine-hnt/full-hotspots/become-a-maker/basic-miner-operation/#backing-up-your-swarm-keys) `swarm_key` file before tampering with any files or directories in your `miner_data` directory**
 
 ```console
 sudo rm -rf miner_data/blockchain.db
